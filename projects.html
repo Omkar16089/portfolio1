@@ -35,6 +35,11 @@ transition:0.3s;
 transform:translateY(-10px);
 }
 
+/* Button spacing */
+.btn-group-custom a{
+margin-right:10px;
+}
+
 footer{
 background:#0f172a;
 color:white;
@@ -66,33 +71,64 @@ Home
 
 <section class="section container">
 
-<h2 class="mb-4">Projects</h2>
+<h2 class="mb-4 text-center">Projects</h2>
 
+<!-- Project 1 -->
 <div class="card p-4 mb-4">
 
 <h4>Linux Resource Monitoring Project</h4>
 
 <p>
-Developed Linux Resource Monitor, a Bash-based tool that automatically tracks CPU, memory, disk, and process usage..
+Developed a Bash-based tool to monitor CPU, memory, disk usage, and running processes in real time.
 </p>
 
+<div class="btn-group-custom">
 <a href="projects/linux-project.pdf" class="btn btn-primary" target="_blank">
 View Project
 </a>
+</div>
 
 </div>
 
+<!-- Project 2 -->
 <div class="card p-4 mb-4">
 
 <h4>AWS EC2 Deployment</h4>
 
 <p>
-Deployed a web application on AWS EC2 with security groups and Linux configuration.
+Deployed a web application on AWS EC2 with security groups, Linux configuration, and secure access setup.
 </p>
 
+<div class="btn-group-custom">
 <a href="projects/aws-project.pdf" class="btn btn-primary" target="_blank">
 View Project
 </a>
+</div>
+
+</div>
+
+<!-- Project 3 -->
+<div class="card p-4 mb-4">
+
+<h4>Linux CHMOD Permission Visualizer</h4>
+
+<p>
+Built an interactive web-based tool to understand Linux file permissions (chmod) with real-time calculation and explanation.
+</p>
+
+<div class="btn-group-custom">
+<a href="https://omkar16089.github.io/CHMOD_File_permission_Linux/" 
+   target="_blank" 
+   class="btn btn-success">
+Live Demo
+</a>
+
+<a href="https://github.com/Omkar16089/CHMOD_File_permission_Linux" 
+   target="_blank" 
+   class="btn btn-dark">
+Source Code
+</a>
+</div>
 
 </div>
 
