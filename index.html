@@ -298,7 +298,7 @@ Linkedin profile
 
 <h4>Technical Support and Implementation Engineer | AWS | Linux | Docker | SQL | IIS</h4>
 
-<p>Building scalable cloud infrastructure and solving production issues</p>
+<p id="typing"></p>
 
 <a href="#experience" class="btn btn-light">View Experience</a>
 
@@ -519,7 +519,22 @@ I enjoy solving real-world infrastructure challenges and continuously learning n
 
 </section>
 
+<!-- Typing Animation Script -->
 
+<script>
+ const text = "Building scalable cloud infrastructure and solving production issues";
+ let i = 0;
+
+function typing(){
+ if(i < text.length){
+ document.getElementById("typing").innerHTML += text.charAt(i);
+ i++;
+ setTimeout(typing, 40);
+ }
+ }
+
+typing();
+ </script>
 
 <footer>
 
