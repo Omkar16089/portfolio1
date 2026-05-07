@@ -286,13 +286,13 @@ Linkedin profile
 <section class="hero">
 <img src="profile.jpg" class="img-fluid rounded-circle">
 
+<!-- hero animation section -->
+<h1 id="nameTyping"></h1>
 
-<h1>Omkar Deshmukh</h1>
-
-<h4>Technical Support and Implementation Engineer | AWS | Linux | Docker | SQL | IIS</h4>
+<h4 id="roleTyping"></h4>
 
 <p id="typing"></p>
-
+    
 <a href="#experience" class="btn btn-light">View Experience</a>
 
 </section>
@@ -546,22 +546,73 @@ LinkedIn
 </div>
 
 </section>
-<!-- Typing Animation Script -->
-
 <script>
- const text = "Building scalable cloud infrastructure and solving production issues";
- let i = 0;
 
-function typing(){
- if(i < text.length){
- document.getElementById("typing").innerHTML += text.charAt(i);
- i++;
- setTimeout(typing, 40);
- }
- }
+/* Name Animation */
+ const nameText = "Omkar Deshmukh";
+ let nameIndex = 0;
 
-typing();
- </script>
+function typeName(){
+
+if(nameIndex < nameText.length){
+
+document.getElementById("nameTyping").innerHTML += nameText.charAt(nameIndex);
+
+nameIndex++;
+
+setTimeout(typeName, 100);
+
+}
+
+}
+
+typeName();
+
+/* Role Animation */
+
+const roleText = "Technical Support and Implementation Engineer | AWS | Linux | Docker | SQL | IIS";
+
+let roleIndex = 0;
+
+function typeRole(){
+
+if(roleIndex < roleText.length){
+
+document.getElementById("roleTyping").innerHTML += roleText.charAt(roleIndex);
+
+roleIndex++;
+
+setTimeout(typeRole, 40);
+
+}
+
+}
+
+setTimeout(typeRole, 1800);
+
+/* Description Animation */
+
+const descText = "Building scalable cloud infrastructure and solving production issues";
+
+let descIndex = 0;
+
+function typeDesc(){
+
+if(descIndex < descText.length){
+
+document.getElementById("typing").innerHTML += descText.charAt(descIndex);
+
+descIndex++;
+
+setTimeout(typeDesc, 35);
+
+}
+
+}
+
+setTimeout(typeDesc, 5500);
+
+</script>
 
 <footer>
 
